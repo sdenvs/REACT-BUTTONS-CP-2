@@ -1,18 +1,18 @@
 const Button = (props) => {
   //  Write your code here.
-  const { name, style } = props;
-  return <Button className={style}>{name}</Button>;
+  const { bname, bstyle } = props;
+  return <button className={bstyle}>{bname}</button>;
 };
 
 const element = (
   //  Write your code here.
 
   <div className="bg-container">
-    <h1>Social Buttons</h1>
+    <h1 className="heading">Social Buttons</h1>
     <div className="buttons">
-      <Button name="Like" style="like-style" />
-      <Button name="Comment" style="comment-style" />
-      <Button name="Share" style="share-style" />
+      <Button bname="Like" bstyle="like-style" />
+      <Button bname="Comment" bstyle="comment-style" />
+      <Button bname="Share" bstyle="share-style" />
     </div>
   </div>
 );
